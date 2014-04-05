@@ -26,6 +26,10 @@ This is a fragment of the pallor [README](README.md).
 
 ![Markdown](samples/Markdown.png)
 
+Here's another sample from the same document. This shows how pallor looks when you select text. Note the contrast between the dark gray links (comment color) and the selection highlighting. Personally I think it's pretty good.
+
+![Markdown selected](samples/Markdown-selected.png)
+
 ## JSON and YAML
 
 These are some sample files that I used to test [jgtr](https://github.com/tummychow/jgtr). Note how the JSON keys are highlighted differently from the values. Due to the issues with the TextMate JSON grammar, this is only possible through a messy hack.
