@@ -17,7 +17,7 @@ It makes as little use of bold/italic as possible, since your preferred font mig
 
 If you use an editor that is compatible with TextMate's `.tmTheme` format, just drop [pallor.tmTheme](pallor.tmTheme) into your editor. Unfortunately, I don't have any other syntax highlighting formats; ports are welcome.
 
-If you want to edit pallor's colors, the basic process is simple. Edit [colors.json](colors.json) to change the colors you don't like. Then use [jgtr](https://github.com/tummychow/jgtr) to compile the template like so:
+If you want to edit pallor's colors, the basic process is simple. Edit [colors.json](colors.json) to change the colors you don't like. Oh, and don't leave *anything* blank - every key must have a valid color associated with it. (Even the name and uuid must have values.) Then use [jgtr](https://github.com/tummychow/jgtr) to compile the template like so:
 
 ```bash
 $ jgtr -t pallor.tmTheme.tmpl.plist -d colors.json -o pallor.tmTheme
