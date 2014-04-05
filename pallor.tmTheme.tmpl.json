@@ -1,0 +1,161 @@
+{
+    "name": "{{ .name }}",
+    "settings": [
+        {
+            "settings": {
+                "background": "#{{ .bg }}",
+                "foreground": "#{{ .fg }}",
+                "caret": "#{{ .fg }}",
+                "invisibles": "#{{ .fg }}",
+                "lineHighlight": "#{{ .linehl }}",
+                "selection": "#{{ .selection }}",
+            }
+        },
+        {
+            "name": "Comment",
+            "scope": "comment, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.definition.bold, punctuation.definition.italic, punctuation.definition.raw, meta.link.inline punctuation.definition.metadata, meta.link.inline markup.underline.link, meta.image.inline markup.underline.link, meta.image.inline punctuation.definition.metadata, punctuation.definition.heading",
+            "settings": {
+                "foreground": "#{{ .comment }}"
+            }
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "settings": {
+                "foreground": "#{{ .string }}"
+            }
+        },
+        {
+            "name": "Constant or literal",
+            "scope": "constant, support.constant",
+            "settings": {
+                "foreground": "#{{ .constant }}"
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword, variable.language",
+            "settings": {
+                "foreground": "#{{ .keyword }}"
+            }
+        },
+        {
+            "name": "Type",
+            "scope": "storage, support.type, entity.name.type",
+            "settings": {
+                "foreground": "#{{ .type }}"
+            }
+        },
+        {
+            "name": "Class",
+            "scope": "support.class, entity.name.class, entity.other.inherited-class",
+            "settings": {
+                "foreground": "#{{ .class }}"
+            }
+        },
+        {
+            "name": "Function",
+            "scope": "entity.name.function, support.function",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#{{ .function }}"
+            }
+        },
+
+        {
+            "name": "Attribute",
+            "scope": "entity.other.attribute-name",
+            "settings": {
+                "foreground": "#{{ .attr }}"
+            }
+        },
+        {
+            "name": "Tag",
+            "scope": "entity.name.tag, meta.structure.dictionary.json string.quoted.double.json - meta.structure.dictionary.value.json, meta meta.structure.dictionary.json string.quoted.double.json - meta meta.structure.dictionary.value.json, meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta.structure.dictionary.value.json, meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta.structure.dictionary.value.json, meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta.structure.dictionary.value.json, meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta.structure.dictionary.value.json, meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta.structure.dictionary.value.json",
+            "settings": {
+                "foreground": "#{{ .tag }}"
+            }
+        },
+
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "settings": {
+                "background": "#{{ .invalidbg }}"
+            }
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "settings": {
+                "background": "#{{ .deprecatedbg }}"
+            }
+        },
+
+        {
+            "name": "Diff: header",
+            "scope": "meta.diff, meta.diff.header",
+            "settings": {
+                "foreground": "#{{ .diff.head }}"
+            }
+        },
+        {
+            "name": "Diff: deleted",
+            "scope": "markup.deleted, meta.diff.header.from-file",
+            "settings": {
+                "foreground": "#{{ .diff.del }}"
+            }
+        },
+        {
+            "name": "Diff: inserted",
+            "scope": "markup.inserted, meta.diff.header.to-file",
+            "settings": {
+                "foreground": "#{{ .diff.ins }}"
+            }
+        },
+        {
+            "name": "Diff: changed",
+            "scope": "markup.changed",
+            "settings": {
+                "foreground": "#{{ .diff.chg }}"
+            }
+        },
+
+        {
+            "name": "Prose: heading",
+            "scope": "markup.heading",
+            "settings": {
+                "foreground": "#{{ .prose.head }}"
+            }
+        },
+        {
+            "name": "Prose: link",
+            "scope": "meta.link.inline string.other.link.title",
+            "settings": {
+                "foreground": "#{{ .prose.link }}"
+            }
+        },
+        {
+            "name": "Prose: raw",
+            "scope": "markup.raw.inline, punctuation.definition.fenced",
+            "settings": {
+                "foreground": "#{{ .prose.raw }}"
+            }
+        },
+        {
+            "name": "Prose: emphasis",
+            "scope": "markup.italic, markup.bold",
+            "settings": {
+                "foreground": "#{{ .prose.emph }}"
+            }
+        },
+        {
+            "name": "Prose: image",
+            "scope": "meta.image.inline string.other.link.description",
+            "settings": {
+                "foreground": "#{{ .prose.img }}"
+            }
+        }
+    ],
+    "uuid": "{{ .uuid }}"
+}
