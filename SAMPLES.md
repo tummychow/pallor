@@ -4,7 +4,7 @@ Screenshots of pallor in action! The editor is Sublime Text 2 with the Soda Dark
 
 ## C
 
-The code is from the ILI9325 driver for [one of my projects](https://github.com/tummychow/arm-alarm).
+The code is from the main function for [one of my projects](https://github.com/tummychow/arm-alarm).
 
 ![C](samples/C.png)
 
