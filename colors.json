@@ -13,10 +13,10 @@
     "constant": "ffb870",
     "type": "ffff88",
     "class": "ffff88",
-    "function": "70d070",
+    "function": "90d090",
 
     "tag": "88d8d8",
-    "attr": "70d070",
+    "attr": "90d090",
 
     "invalidbg": "f82870",
     "deprecatedbg": "b080ff",
@@ -24,13 +24,13 @@
     "diff": {
         "head": "ffff88",
         "del": "c87878",
-        "ins": "70d070",
+        "ins": "90d090",
         "chg": "88d8d8"
     },
 
     "prose": {
         "head": "ffff88",
-        "link": "70d070",
+        "link": "90d090",
         "raw": "88d8d8",
         "emph": "c87878",
         "img": "ffb870"
