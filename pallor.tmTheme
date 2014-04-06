@@ -18,7 +18,7 @@
                 <key>invisibles</key>
                 <string>#d8d8d8</string>
                 <key>lineHighlight</key>
-                <string>#303030</string>
+                <string>#282828</string>
                 <key>selection</key>
                 <string>#80808060</string>
             </dict>
