@@ -1,0 +1,34 @@
+/* credits:
+ * https://benjeffrey.com/posts/pandoc-syntax-highlighting-css
+ */
+pre {
+  color: #{{ .fg }};
+  background-color: #{{ .bg }};
+}
+
+/* keyword */
+.sourceCode .kw { color: #{{ .keyword }}; }
+
+/* data type */
+.sourceCode .dt { color: #{{ .type }}; }
+
+/* string */
+.sourceCode .st { color: #{{ .string }}; }
+
+/* comment */
+.sourceCode .co { color: #{{ .comment }}; }
+
+/* function */
+.sourceCode .fu { color: #{{ .function }}; }
+
+/* various forms of numbers and characters */
+.sourceCode .dv,
+.sourceCode .bn,
+.sourceCode .fl,
+.sourceCode .ch { color: #{{ .constant }}; }
+
+/* "alert" */
+.sourceCode .al { background-color: #{{ .deprecatedbg }}; }
+
+/* error */
+.sourceCode .er { background-color: #{{ .invalidbg }}; }

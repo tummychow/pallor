@@ -1,0 +1,34 @@
+/* credits:
+ * https://benjeffrey.com/posts/pandoc-syntax-highlighting-css
+ */
+pre {
+  color: #d8d8d8;
+  background-color: #383838;
+}
+
+/* keyword */
+.sourceCode .kw { color: #88d8d8; }
+
+/* data type */
+.sourceCode .dt { color: #ffff88; }
+
+/* string */
+.sourceCode .st { color: #c87878; }
+
+/* comment */
+.sourceCode .co { color: #808080; }
+
+/* function */
+.sourceCode .fu { color: #90d090; }
+
+/* various forms of numbers and characters */
+.sourceCode .dv,
+.sourceCode .bn,
+.sourceCode .fl,
+.sourceCode .ch { color: #ffb870; }
+
+/* "alert" */
+.sourceCode .al { background-color: #b080ff; }
+
+/* error */
+.sourceCode .er { background-color: #f82870; }
