@@ -14,11 +14,23 @@ The code is from [Cobra](https://github.com/spf13/cobra).
 
 ![Go](samples/Go.png)
 
+## Ruby
+
+This is from [Gollum](https://github.com/gollum/gollum/blob/master/lib/gollum/app.rb).
+
+![Ruby](samples/Ruby.png)
+
 ## CSS
 
 This is a fragment of the CSS that GitHub uses to style Markdown. I think I got it from [cutemarked](https://github.com/cloose/cutemarked).
 
 ![CSS](samples/CSS.png)
+
+## Diffs and patches
+
+This diff is part of a changeset that I submitted to Cobra.
+
+![Patch](samples/Patch.png)
 
 ## Markdown
 
