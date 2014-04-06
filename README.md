@@ -7,7 +7,7 @@ Several samples are shown in [SAMPLES.md](SAMPLES.md), but here's a good one fro
 
 ## Design
 
-pallor is a dark low-constrast color scheme with an especially pale background (`#383838`). In this regard, it is heavily derivative of [zenburn](http://slinky.imukuppi.org/zenburnpage/). If you like zenburn's "alien fruit salad" feel, you might also find pallor appealing. Where zenburn has a lot of yellows and oranges, I generally prefer a lot of blues and greens, so pallor's look is slightly cooler in temperature.
+pallor is a dark low-constrast color scheme with an especially pale background (`#383838`). In this regard, it is heavily derivative of [zenburn](http://slinky.imukuppi.org/zenburnpage/). If you like zenburn's "alien fruit salad" feel, you might also find pallor appealing. Where zenburn has a lot of yellows and oranges, I generally prefer a lot of blues and greens, so pallor's look is slightly cooler in temperature. See [COLORS.md](COLORS.md) for more details on the pallor colors.
 
 pallor aims for as few colors as possible (as of writing, there are only five non-gray foreground colors). This ensures that the colors are easy to distinguish. One of the things I didn't like about zenburn was that there were a lot of colors that were really similar. If they weren't side by side, I wouldn't have been able to tell them apart, so the distinction between them became meaningless. pallor tries to make this a complete non-issue.
 
@@ -30,17 +30,6 @@ If you want to edit pallor's structure (ie what color corresponds to what scopes
 pallor has first-class support for a handful of TextMate grammars: [C Improved](https://github.com/abusalimov/SublimeCImproved), [GoSublime](https://github.com/DisposaBoy/GoSublime) and [Markdown Extended](https://github.com/jonschlinkert/sublime-markdown-extended). Those happen to be the languages I use, so I care a lot about supporting them. (Notice how none of those grammars are TextMate defaults, they're all improved in some way.)
 
 I also have some behavior specialized for the standard TextMate JSON grammar, so that keys are highlighted differently from values. See the [credits](#credits) for where I got the idea for JSON, it's a real hell of a hack. I'm particularly concerned about its stability, so if your JSON is coming out all blue, you should open an issue ASAP. Right now I think it goes 7 or 8 nested objects deep, which is good enough for me. Honestly the problem is with the TextMate JSON grammar, but I can't be bothered to learn and fix that right now.
-
-If you take a look at colors.json, you'll get an idea of what the coloring styles are. In brief:
- - green: function names, HTML attributes, link title markup
- - yellow: types and classes, heading markup
- - blue: keywords, HTML tags, JSON/YAML keys, raw markup
- - red: strings, emphasized markup (italic/bold - I prefer to highlight them the same rather than promote color pollution)
- - orange: constants and literals, images in markup
-
-That's right, five colors. And there is no way you'll ever mistake one for the other. I consider that to be a feature.
-
-pallor also makes liberal use of the comment color (a dark gray which blends into the background). In addition to comments, this color is used for many delimiters (quotes around strings, brackets around link titles, heading delimiters in markdown). I got the idea for graying out quotes from zenburn, but I'm sure there are other themes that do it. If you have a markdown link, the entire link target will also be grayed out like a comment. I find this quite useful because the link target is not a part of the output text, so to me it's "background" material.
 
 If highlighting is less granular than you'd like in a language that you use, PRs are welcome. If highlighting is BORKED in a language (ie this element falls under this group of stuff, yet it's being highlighted under a different group), issues are *strongly* encouraged. I care about my theme breaking stuff - who knows, someday I'll be programming in that language. However, the problem might be with the TextMate grammar, and not with pallor. See [CONTRIBUTING.md](CONTRIBUTING.md).
 

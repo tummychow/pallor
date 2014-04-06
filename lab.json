@@ -1,0 +1,38 @@
+{
+    "name": "palLAB",
+    "uuid": "22fa54c5-8c49-41f9-b226-0be51f44d268",
+
+    "bg": "3b3b3f",
+    "fg": "d7d3d8",
+    "linehl": "272525",
+    "selection": "85838860",
+    "comment": "858388",
+
+    "string": "ffc0b7",
+    "keyword": "99e1e0",
+    "constant": "ffc67a",
+    "type": "d4db6e",
+    "class": "d4db6e",
+    "function": "89ea88",
+
+    "tag": "99e1e0",
+    "attr": "89ea88",
+
+    "invalidbg": "f82870",
+    "deprecatedbg": "b080ff",
+
+    "diff": {
+        "head": "d4db6e",
+        "del": "ffc0b7",
+        "ins": "89ea88",
+        "chg": "99e1e0"
+    },
+
+    "prose": {
+        "head": "d4db6e",
+        "link": "89ea88",
+        "raw": "99e1e0",
+        "emph": "ffc0b7",
+        "img": "ffc67a"
+    }
+}
