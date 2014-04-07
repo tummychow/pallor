@@ -8,31 +8,39 @@
     "selection": "85838860",
     "comment": "858388",
 
-    "string": "ffc0b7",
-    "keyword": "99e1e0",
-    "constant": "ffc67a",
-    "type": "d4db6e",
-    "class": "d4db6e",
-    "function": "89ea88",
-
-    "tag": "99e1e0",
-    "attr": "89ea88",
-
     "invalidbg": "f82870",
     "deprecatedbg": "b080ff",
 
+    "colors" : {
+        "red": "ffc0b7",
+        "blue": "99e1e0",
+        "orange": "ffc67a",
+        "yellow": "d4db6e",
+        "green": "89ea88"
+    },
+
+    "string": "red",
+    "keyword": "blue",
+    "constant": "orange",
+    "type": "yellow",
+    "class": "yellow",
+    "function": "green",
+
+    "tag": "blue",
+    "attr": "green",
+
     "diff": {
-        "head": "d4db6e",
-        "del": "ffc0b7",
-        "ins": "89ea88",
-        "chg": "99e1e0"
+        "head": "yellow",
+        "del": "red",
+        "ins": "green",
+        "chg": "blue"
     },
 
     "prose": {
-        "head": "d4db6e",
-        "link": "89ea88",
-        "raw": "99e1e0",
-        "emph": "ffc0b7",
-        "img": "ffc67a"
+        "head": "yellow",
+        "link": "green",
+        "raw": "blue",
+        "emph": "red",
+        "img": "orange"
     }
 }
