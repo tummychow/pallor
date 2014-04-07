@@ -22,35 +22,35 @@
             "name": "String",
             "scope": "string",
             "settings": {
-                "foreground": "#{{ .string }}"
+                "foreground": "#{{ index .colors .string }}"
             }
         },
         {
             "name": "Constant or literal",
             "scope": "constant, support.constant",
             "settings": {
-                "foreground": "#{{ .constant }}"
+                "foreground": "#{{ index .colors .constant }}"
             }
         },
         {
             "name": "Keyword",
             "scope": "keyword, variable.language",
             "settings": {
-                "foreground": "#{{ .keyword }}"
+                "foreground": "#{{ index .colors .keyword }}"
             }
         },
         {
             "name": "Type",
             "scope": "storage, support.type, entity.name.type",
             "settings": {
-                "foreground": "#{{ .type }}"
+                "foreground": "#{{ index .colors .type }}"
             }
         },
         {
             "name": "Class",
             "scope": "support.class, entity.name.class, entity.other.inherited-class",
             "settings": {
-                "foreground": "#{{ .class }}"
+                "foreground": "#{{ index .colors .class }}"
             }
         },
         {
@@ -58,7 +58,7 @@
             "scope": "entity.name.function, support.function",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#{{ .function }}"
+                "foreground": "#{{ index .colors .function }}"
             }
         },
 
@@ -66,14 +66,14 @@
             "name": "Attribute",
             "scope": "entity.other.attribute-name",
             "settings": {
-                "foreground": "#{{ .attr }}"
+                "foreground": "#{{ index .colors .attr }}"
             }
         },
         {
             "name": "Tag",
             "scope": "entity.name.tag, meta.structure.dictionary.json string.quoted.double.json - meta.structure.dictionary.value.json, meta meta.structure.dictionary.json string.quoted.double.json - meta meta.structure.dictionary.value.json, meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta.structure.dictionary.value.json, meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta.structure.dictionary.value.json, meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta.structure.dictionary.value.json, meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta.structure.dictionary.value.json, meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta.structure.dictionary.value.json",
             "settings": {
-                "foreground": "#{{ .tag }}"
+                "foreground": "#{{ index .colors .tag }}"
             }
         },
 
@@ -96,28 +96,28 @@
             "name": "Diff: header",
             "scope": "meta.diff, meta.diff.header",
             "settings": {
-                "foreground": "#{{ .diff.head }}"
+                "foreground": "#{{ index .colors .diff.head }}"
             }
         },
         {
             "name": "Diff: deleted",
             "scope": "markup.deleted, meta.diff.header.from-file",
             "settings": {
-                "foreground": "#{{ .diff.del }}"
+                "foreground": "#{{ index .colors .diff.del }}"
             }
         },
         {
             "name": "Diff: inserted",
             "scope": "markup.inserted, meta.diff.header.to-file",
             "settings": {
-                "foreground": "#{{ .diff.ins }}"
+                "foreground": "#{{ index .colors .diff.ins }}"
             }
         },
         {
             "name": "Diff: changed",
             "scope": "markup.changed",
             "settings": {
-                "foreground": "#{{ .diff.chg }}"
+                "foreground": "#{{ index .colors .diff.chg }}"
             }
         },
 
@@ -125,35 +125,35 @@
             "name": "Prose: heading",
             "scope": "markup.heading",
             "settings": {
-                "foreground": "#{{ .prose.head }}"
+                "foreground": "#{{ index .colors .prose.head }}"
             }
         },
         {
             "name": "Prose: link",
             "scope": "meta.link.inline string.other.link.title",
             "settings": {
-                "foreground": "#{{ .prose.link }}"
+                "foreground": "#{{ index .colors .prose.link }}"
             }
         },
         {
             "name": "Prose: raw",
             "scope": "markup.raw.inline, punctuation.definition.fenced",
             "settings": {
-                "foreground": "#{{ .prose.raw }}"
+                "foreground": "#{{ index .colors .prose.raw }}"
             }
         },
         {
             "name": "Prose: emphasis",
             "scope": "markup.italic, markup.bold",
             "settings": {
-                "foreground": "#{{ .prose.emph }}"
+                "foreground": "#{{ index .colors .prose.emph }}"
             }
         },
         {
             "name": "Prose: image",
             "scope": "meta.image.inline string.other.link.description",
             "settings": {
-                "foreground": "#{{ .prose.img }}"
+                "foreground": "#{{ index .colors .prose.img }}"
             }
         }
     ],

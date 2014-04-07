@@ -8,31 +8,39 @@
     "selection": "80808060",
     "comment": "808080",
 
-    "string": "c87878",
-    "keyword": "88d8d8",
-    "constant": "ffb870",
-    "type": "ffff88",
-    "class": "ffff88",
-    "function": "90d090",
-
-    "tag": "88d8d8",
-    "attr": "90d090",
-
     "invalidbg": "f82870",
     "deprecatedbg": "b080ff",
 
+    "colors" : {
+        "red": "c87878",
+        "blue": "88d8d8",
+        "orange": "ffb870",
+        "yellow": "ffff88",
+        "green": "90d090"
+    },
+
+    "string": "red",
+    "keyword": "blue",
+    "constant": "orange",
+    "type": "yellow",
+    "class": "yellow",
+    "function": "green",
+
+    "tag": "blue",
+    "attr": "green",
+
     "diff": {
-        "head": "ffff88",
-        "del": "c87878",
-        "ins": "90d090",
-        "chg": "88d8d8"
+        "head": "yellow",
+        "del": "red",
+        "ins": "green",
+        "chg": "blue"
     },
 
     "prose": {
-        "head": "ffff88",
-        "link": "90d090",
-        "raw": "88d8d8",
-        "emph": "c87878",
-        "img": "ffb870"
+        "head": "yellow",
+        "link": "green",
+        "raw": "blue",
+        "emph": "red",
+        "img": "orange"
     }
 }

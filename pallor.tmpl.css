@@ -7,25 +7,25 @@ pre {
 }
 
 /* keyword */
-.sourceCode .kw { color: #{{ .keyword }}; }
+.sourceCode .kw { color: #{{ index .colors .keyword }}; }
 
 /* data type */
-.sourceCode .dt { color: #{{ .type }}; }
+.sourceCode .dt { color: #{{ index .colors .type }}; }
 
 /* string */
-.sourceCode .st { color: #{{ .string }}; }
+.sourceCode .st { color: #{{ index .colors .string }}; }
 
 /* comment */
 .sourceCode .co { color: #{{ .comment }}; }
 
 /* function */
-.sourceCode .fu { color: #{{ .function }}; }
+.sourceCode .fu { color: #{{ index .colors .function }}; }
 
 /* various forms of numbers and characters */
 .sourceCode .dv,
 .sourceCode .bn,
 .sourceCode .fl,
-.sourceCode .ch { color: #{{ .constant }}; }
+.sourceCode .ch { color: #{{ index .colors .constant }}; }
 
 /* "alert" */
 .sourceCode .al { background-color: #{{ .deprecatedbg }}; }

@@ -42,7 +42,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .string }}</string>
+                <string>#{{ index .colors .string }}</string>
             </dict>
         </dict>
         <dict>
@@ -53,7 +53,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .constant }}</string>
+                <string>#{{ index .colors .constant }}</string>
             </dict>
         </dict>
         <dict>
@@ -64,7 +64,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .keyword }}</string>
+                <string>#{{ index .colors .keyword }}</string>
             </dict>
         </dict>
         <dict>
@@ -75,7 +75,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .type }}</string>
+                <string>#{{ index .colors .type }}</string>
             </dict>
         </dict>
         <dict>
@@ -86,7 +86,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .class }}</string>
+                <string>#{{ index .colors .class }}</string>
             </dict>
         </dict>
         <dict>
@@ -99,7 +99,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#{{ .function }}</string>
+                <string>#{{ index .colors .function }}</string>
             </dict>
         </dict>
         <dict>
@@ -110,7 +110,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .attr }}</string>
+                <string>#{{ index .colors .attr }}</string>
             </dict>
         </dict>
         <dict>
@@ -121,7 +121,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .tag }}</string>
+                <string>#{{ index .colors .tag }}</string>
             </dict>
         </dict>
         <dict>
@@ -154,7 +154,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .diff.head }}</string>
+                <string>#{{ index .colors .diff.head }}</string>
             </dict>
         </dict>
         <dict>
@@ -165,7 +165,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .diff.del }}</string>
+                <string>#{{ index .colors .diff.del }}</string>
             </dict>
         </dict>
         <dict>
@@ -176,7 +176,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .diff.ins }}</string>
+                <string>#{{ index .colors .diff.ins }}</string>
             </dict>
         </dict>
         <dict>
@@ -187,7 +187,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .diff.chg }}</string>
+                <string>#{{ index .colors .diff.chg }}</string>
             </dict>
         </dict>
         <dict>
@@ -198,7 +198,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .prose.head }}</string>
+                <string>#{{ index .colors .prose.head }}</string>
             </dict>
         </dict>
         <dict>
@@ -209,7 +209,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .prose.link }}</string>
+                <string>#{{ index .colors .prose.link }}</string>
             </dict>
         </dict>
         <dict>
@@ -220,7 +220,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .prose.raw }}</string>
+                <string>#{{ index .colors .prose.raw }}</string>
             </dict>
         </dict>
         <dict>
@@ -231,7 +231,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .prose.emph }}</string>
+                <string>#{{ index .colors .prose.emph }}</string>
             </dict>
         </dict>
         <dict>
@@ -242,7 +242,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#{{ .prose.img }}</string>
+                <string>#{{ index .colors .prose.img }}</string>
             </dict>
         </dict>
     </array>
