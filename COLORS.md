@@ -6,17 +6,17 @@ The monotones are all shades of gray. In particular, I dislike having background
 
 - `#383838` (background)
 - `#d8d8d8` (foreground)
-- `#303030` (line highlight)
+- `#282828` (line highlight)
 - `#808080` (comment)
 - `#80808060` (selection - semitransparent)
 
 The highlights are very close to ones used in zenburn.
 
-- red `#d88888` (strings, emphasized markup)
+- red `#c87878` (strings, emphasized markup)
 - blue `#88d8d8` (keywords, HTML tags/JSON and YAML keys, raw markup)
 - orange `#ffb870` (constants/literals, markup images)
 - yellow `#ffff88` (types/classes markup headings)
-- green `#70d070` (functions, HTML attributes, markup links)
+- green `#90d090` (functions, HTML attributes, markup links)
 
 The RGB values are all divisible by 8, not for any real reason, but because I like rounded numbers. /shrug
 
@@ -45,6 +45,8 @@ Now, the accents. All of them have been adjusted to 85 lightness to match the fo
 This is a piece of Go code (from jgtr), in palLAB:
 ![Go](samples/LAB.png)
 
-I think palLAB is interesting, but I don't like how it looks. The background is distinctly blue (too much for me), which makes the theme a bit too cold and makes it feel "contrastier". I can't decide whether the line highlight is too dark or just right. The red is also significantly lighter (+20 lightness) which makes it really washed out, and not distinct enough. In particular, I find red and orange can be confused.
+I think palLAB is interesting, but I don't like how it looks. The background is distinctly blue (too much for me), which makes the theme a bit too cold and makes it feel "contrastier". The red is also significantly lighter (+20 lightness) which makes it really washed out, and not distinct enough. In particular, I find red and orange can be confused.
 
-That being said, the two themes "feel" surprisingly similar. If you put them side by side, they look alike (setting aside the background and line highlight differences, which are probably the most severe changes). Perhaps I'll try this experiment again in the future.
+My opinion on the line highlight change was mixed at first, but after some experimenting, I think I like it. The original colors.json now uses a darker line highlight color as well. Particularly in prose (where one line can be a lot of text), the higher contrast of the current line really stands out in a good way.
+
+Despite the things I don't like, the two themes "feel" surprisingly similar. If you put them side by side, they look alike (setting aside the background and line highlight differences, which are probably the most severe changes). Perhaps I'll try this experiment again in the future.
