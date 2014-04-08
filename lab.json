@@ -41,6 +41,7 @@
         "link": "green",
         "raw": "blue",
         "emph": "red",
-        "img": "orange"
+        "img": "orange",
+        "math": "orange"
     }
 }

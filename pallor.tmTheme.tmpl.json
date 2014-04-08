@@ -13,7 +13,7 @@
         },
         {
             "name": "Comment",
-            "scope": "comment, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.definition.bold, punctuation.definition.italic, punctuation.definition.raw, meta.link.inline punctuation.definition.metadata, meta.link.inline markup.underline.link, meta.image.inline markup.underline.link, meta.image.inline punctuation.definition.metadata, punctuation.definition.heading",
+            "scope": "comment, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.definition.bold, punctuation.definition.italic, punctuation.definition.raw, punctuation.definition.math, meta.link.inline punctuation.definition.metadata, meta.link.inline markup.underline.link, meta.image.inline markup.underline.link, meta.image.inline punctuation.definition.metadata, punctuation.definition.heading",
             "settings": {
                 "foreground": "#{{ .comment }}"
             }
@@ -154,6 +154,13 @@
             "scope": "meta.image.inline string.other.link.description",
             "settings": {
                 "foreground": "#{{ index .colors .prose.img }}"
+            }
+        },
+        {
+            "name": "Prose: math",
+            "scope": "markup.math",
+            "settings": {
+                "foreground": "#{{ index .colors .prose.math }}"
             }
         }
     ],

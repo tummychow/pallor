@@ -27,7 +27,7 @@
             <key>name</key>
             <string>Comment</string>
             <key>scope</key>
-            <string>comment, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.definition.bold, punctuation.definition.italic, punctuation.definition.raw, meta.link.inline punctuation.definition.metadata, meta.link.inline markup.underline.link, meta.image.inline markup.underline.link, meta.image.inline punctuation.definition.metadata, punctuation.definition.heading</string>
+            <string>comment, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.definition.bold, punctuation.definition.italic, punctuation.definition.raw, punctuation.definition.math, meta.link.inline punctuation.definition.metadata, meta.link.inline markup.underline.link, meta.image.inline markup.underline.link, meta.image.inline punctuation.definition.metadata, punctuation.definition.heading</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -243,6 +243,17 @@
             <dict>
                 <key>foreground</key>
                 <string>#{{ index .colors .prose.img }}</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Prose: math</string>
+            <key>scope</key>
+            <string>markup.math</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#{{ index .colors .prose.math }}</string>
             </dict>
         </dict>
     </array>
