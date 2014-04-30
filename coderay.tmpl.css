@@ -1,43 +1,51 @@
 .CodeRay {
-  background-color: #{{ .bg }};
-  border: 1px solid #{{ .bg }};
+  border: none;
   color: #{{ .fg }};
-}
-.CodeRay pre {
-  margin: 0px;
   background-color: #{{ .bg }};
-  border: 1px solid #{{ .bg }};
+}
+
+.CodeRay pre {
+  margin: 0;
+  border: none;
+  background-color: transparent;
 }
 
 span.CodeRay {
   white-space: pre;
-  border: 0px;
   padding: 2px;
+  border: none;
+}
+
+.CodeRay .line {
+  display: block;
+  float: left;
+  width: 100%;
 }
 
 table.CodeRay {
-  border-collapse: collapse;
   width: 100%;
-  padding: 2px; }
+  padding: 2px;
+  border-collapse: collapse;
+}
+
 table.CodeRay td {
   padding: 2px 4px;
   vertical-align: top;
 }
 
 .CodeRay .line-numbers {
-  background-color: #{{ .bg }};
-  color: #{{ .comment }};
   text-align: right;
+  color: #{{ .comment }};
+  background-color: #{{ .bg }};
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
-.CodeRay .line-numbers pre {
-  word-break: normal;
-}
-.CodeRay span.line-numbers { padding: 0px 4px; }
-.CodeRay .line { display: block; float: left; width: 100%; }
+.CodeRay .line-numbers pre { word-break: normal; }
+
+.CodeRay span.line-numbers { padding: 0 4px; }
+
 .CodeRay .code { width: 100%; }
 
 .CodeRay .comment,
