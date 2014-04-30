@@ -27,7 +27,7 @@ $ jgtr -t pallor.tmTheme.tmpl.plist -d colors.json -o pallor.tmTheme
 
 If you want to edit pallor's structure (ie what color corresponds to what scopes), you'll need to edit the raw plist (which is an awful experience), or acquire a means of converting json to plist. I use [SerializedDataConverter](https://github.com/facelessuser/SerializedDataConverter). You'll want to work with either [pallor.tmTheme.tmpl.plist](pallor.tmTheme.tmpl.plist) or [pallor.tmTheme.tmpl.json](pallor.tmTheme.tmpl.json). Once you've edited the plist to your heart's content (or edited the JSON and converted it back to plist), invoke jgtr as above to generate the new theme.
 
-I use [pandoc](http://johnmacfarlane.net/pandoc) to write stuff, so I've also included an experimental [CSS file](pallor.css) for highlighting pandoc-generated HTML. A [template](pallor.tmpl.css) is also provided, so you can regenerate the CSS after changing the colors. I haven't tested this, so let me know if stuff doesn't work.
+I use [pandoc](http://johnmacfarlane.net/pandoc) to write stuff, so I've also included an experimental [CSS file](pandoc.css) for highlighting pandoc-generated HTML. A [template](pandoc.tmpl.css) is also provided, so you can regenerate the CSS after changing the colors. I haven't tested this, so let me know if stuff doesn't work. I also have a [CSS file](coderay.css) for CodeRay-generated HTML with optional table-based line numbers (which I use in [lannoc](https://github.com/tummychow/lannoc)), and a matching [template](coderay.tmpl.css).
 
 ## Languages and scopes
 

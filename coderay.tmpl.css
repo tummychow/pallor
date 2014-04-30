@@ -1,0 +1,76 @@
+.CodeRay {
+  background-color: #{{ .bg }};
+  border: 1px solid #{{ .bg }};
+  color: #{{ .fg }};
+}
+.CodeRay pre {
+  margin: 0px;
+  background-color: #{{ .bg }};
+  border: 1px solid #{{ .bg }};
+}
+
+span.CodeRay {
+  white-space: pre;
+  border: 0px;
+  padding: 2px;
+}
+
+table.CodeRay {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 2px; }
+table.CodeRay td {
+  padding: 2px 4px;
+  vertical-align: top;
+}
+
+.CodeRay .line-numbers {
+  background-color: #{{ .bg }};
+  color: #{{ .comment }};
+  text-align: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.CodeRay .line-numbers pre {
+  word-break: normal;
+}
+.CodeRay span.line-numbers { padding: 0px 4px; }
+.CodeRay .line { display: block; float: left; width: 100%; }
+.CodeRay .code { width: 100%; }
+
+.CodeRay .comment,
+.CodeRay .char .delimiter,
+.CodeRay .regexp .delimiter,
+.CodeRay .string .delimiter { color: #{{ .comment }}; }
+
+.CodeRay .binary,
+.CodeRay .constant,
+.CodeRay .predefined-constant,
+.CodeRay .float,
+.CodeRay .hex,
+.CodeRay .integer,
+.CodeRay .octal,
+.CodeRay .symbol { color: #{{ index .colors .constant }}; }
+
+.CodeRay .type,
+.CodeRay .class,
+.CodeRay .pseudo-class { color: #{{ index .colors .type }}; }
+
+.CodeRay .char,
+.CodeRay .regexp,
+.CodeRay .string { color: #{{ index .colors .string }}; }
+
+.CodeRay .keyword { color: #{{ index .colors .keyword}}; }
+
+.CodeRay .function { color: #{{ index .colors .function }}; }
+
+.CodeRay .attribute-name { color: #{{ index .colors .attr }}; }
+
+.CodeRay .tag { color: #{{ index .colors .attr }}; }
+
+.CodeRay .insert { color: #{{ index .colors .diff.ins }}; }
+.CodeRay .delete { color: #{{ index .colors .diff.del }}; }
+.CodeRay .change { color: #{{ index .colors .diff.chg }}; }
+.CodeRay .head { color: #{{ index .colors .diff.head }}; }
